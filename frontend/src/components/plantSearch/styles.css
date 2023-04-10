@@ -1,0 +1,28 @@
+.plantSearch__img {
+  width: 300px;
+  height: 300px;
+}
+
+.plantSearch__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.plantSearch__box {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.plantSearch__box--reult {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  margin: 10px;
+}
