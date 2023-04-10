@@ -28,7 +28,7 @@ function Presentation() {
     <div className="Presentation">
       <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
       <h1>
-        🧑🏽‍🌾
+        💬
         <span
           className="txt-rotate"
           data-period="2000"

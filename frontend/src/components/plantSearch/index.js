@@ -1,25 +1,26 @@
 import React, { useState, useEffect } from "react";
 import "./styles.css";
+import noImage from "../../assets/img/noimage.png";
 
 function PlantSearch() {
   const [plants, setPlants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
 
-  useEffect(() => {
-    async function fetchPlants() {
-      try {
-        const response = await fetch(
-          `http://localhost:3001/api/plants?name=${searchTerm}&page=${currentPage}`
-        );
-        const data = await response.json();
-        setPlants(data.data);
-      } catch (error) {
-        console.error(error);
-        setPlants([]);
-      }
+  async function fetchPlants() {
+    try {
+      const response = await fetch(
+        `http://localhost:3001/api/plants?name=${searchTerm}&page=${currentPage}`
+      );
+      const data = await response.json();
+      setPlants(data.data);
+    } catch (error) {
+      console.error(error);
+      setPlants([]);
     }
+  }
 
+  useEffect(() => {
     if (searchTerm) {
       fetchPlants();
     } else {
@@ -62,10 +63,10 @@ function PlantSearch() {
           plants.map((plant) => (
             <div className="plantSearch__box--reult" key={plant.id}>
               <h3>{plant.scientific_name}</h3>
-              {plant.common_name || "Nome comum não encontrado"}
+              <div>{plant.common_name || "Nome comum não encontrado"}</div>
               <img
                 className="plantSearch__img"
-                src={plant.image_url}
+                src={plant.image_url ? plant.image_url : noImage}
                 alt={plant.common_name}
               />
             </div>
