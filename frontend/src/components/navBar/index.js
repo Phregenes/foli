@@ -13,6 +13,7 @@ export default function NavBar() {
       <div className="navbar__links">
       <Link className={`navbar__link ${location.pathname === '/articles' ? 'active' : ''}`} to="/articles">Artigos</Link>
       <Link className={`navbar__link ${location.pathname === '/aboult' ? 'active' : ''}`} to="/aboult">Sobre</Link>
+      <Link className={`navbar__link ${location.pathname === '/search' ? 'active' : ''}`} to="/search">Buscar Plantas</Link>
       </div>
     </nav>
   );

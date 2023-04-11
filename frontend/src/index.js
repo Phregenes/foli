@@ -9,17 +9,8 @@ import Aboult from "./pages/aboult";
 import Home from "./pages/home";
 import ErrorPage from "./pages/errorPage";
 import { Articles } from "./pages/articles";
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home />
-//   },
-//   {
-//     path: "Aboult",
-//     element: <Aboult />
-//   }
-// ])
+import Search from "./pages/search";
+import PlantDeatails from "./pages/plantDetails";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +30,14 @@ const router = createBrowserRouter([
         path: "articles",
         element: <Articles />,
       },
+      {
+        path: "search",
+        element: <Search />,
+      },
+      {
+        path: "search/:id",
+        element: <PlantDeatails />
+      }
     ],
   },
 ]);

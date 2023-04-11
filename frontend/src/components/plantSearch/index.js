@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./styles.css";
 import noImage from "../../assets/img/noimage.png";
 
+import { Link } from "react-router-dom";
+
 function PlantSearch() {
   const [plants, setPlants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -62,7 +64,7 @@ function PlantSearch() {
         {plants &&
           plants.map((plant) => (
             <div className="plantSearch__box--reult" key={plant.id}>
-              <h3>{plant.scientific_name}</h3>
+              <Link to={`/search/${plant.id}`} key={plant.id}>{plant.scientific_name}</Link>
               <div>{plant.common_name || "Nome comum não encontrado"}</div>
               <img
                 className="plantSearch__img"
