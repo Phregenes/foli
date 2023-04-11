@@ -122,7 +122,7 @@ const particlesLoaded = useCallback(async container => {
                       ]
                     },
                     size: {
-                        value: { min: 5, max: 20 },
+                        value: { min: 10, max: 30 },
                     },
                 },
                 detectRetina: true,
