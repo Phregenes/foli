@@ -24,6 +24,19 @@ app.get('/api/plants', async (req, res) => {
   }
 });
 
+// Definir rota para recuperar informações detalhadas sobre uma planta pelo ID
+app.get('/api/species/:id', async (req, res) => {
+  try {
+    const { id } = req.params;
+    const response = await fetch(`${apiUrl}/species/${id}?token=${apiKey}`);
+    const data = await response.json();
+    res.send(data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ error: 'Erro ao recuperar informações sobre a planta.' });
+  }
+});
+
 // Iniciar o servidor na porta especificada
 app.listen(port, () => {
   console.log(`API do BFF iniciada em http://localhost:${port}`);
