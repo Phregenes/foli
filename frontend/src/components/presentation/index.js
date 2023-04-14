@@ -27,7 +27,7 @@ function Presentation() {
   return (
     <div className="Presentation">
       <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
-      <h1>
+      <h1 className='txt-h1'>
         💬
         <span
           className="txt-rotate"
