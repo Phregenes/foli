@@ -3,8 +3,8 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
 import folha1 from '../../assets/img/folha1.png';
-// import folha2 from '../../assets/img/begonia.png';
-import folha3 from '../../assets/img/folha3.png';
+import leaf2 from '../../assets/img/monst.png';
+import leaf3 from '../../assets/img/leaf3.png';
 
 import './styles.css';
 
@@ -104,18 +104,18 @@ const particlesLoaded = useCallback(async container => {
                         nb_sides: 40
                       },
                       images:[ 
-                        // {
-                        //   src: folha2,
-                        //   width: '3',
-                        //   height: '8'
-                        // },
                         {
-                          src: folha1,
-                          width: 10,
-                          height: 10
+                          src: leaf2,
+                          width: 1,
+                          height: 1
                         },
                         {
-                          src: folha3,
+                          src: folha1,
+                          width: 1,
+                          height: 1
+                        },
+                        {
+                          src: leaf3,
                           width: 10,
                           height: 10
                         },
