@@ -9,7 +9,7 @@ function SelectArticles() {
       </div>
       <div className="select__box-info bg2">
         <h3 className="select__box-h3">
-          Faça do seu select Office mais agradável.
+          Faça do seu Home Office mais agradável.
         </h3>
       </div>
       <div className="select__box-info bg3">
