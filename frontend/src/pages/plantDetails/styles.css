@@ -1,0 +1,32 @@
+.plant-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .plant-details h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+  
+  .plant-details img {
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .plant-details-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .plant-details-col {
+    flex-basis: 50%;
+  }
+  
+  .plant-details p {
+    margin-bottom: 8px;
+  }
+  
+  .plant-details strong {
+    font-weight: bold;
+  }

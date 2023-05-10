@@ -9,7 +9,7 @@ export default function NavBar() {
 
   return (
     <nav className="navbar">
-      <Link className="navbar__logo" to="/">Foli</Link>
+      <Link className="navbar__logo" to="/">Pedro Regenes</Link>
       <div className="navbar__links">
       <Link className={`navbar__link ${location.pathname === '/articles' ? 'active' : ''}`} to="/articles">Artigos</Link>
       <Link className={`navbar__link ${location.pathname === '/aboult' ? 'active' : ''}`} to="/aboult">Sobre</Link>

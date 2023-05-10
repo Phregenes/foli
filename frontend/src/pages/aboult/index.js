@@ -1,6 +1,7 @@
-import "./styles.css";
+// import "./styles.css";
 
 function Aboult() {
+
   return (
     <div className="aboult">
       bom dia

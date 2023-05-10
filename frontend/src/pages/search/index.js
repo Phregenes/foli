@@ -3,7 +3,8 @@ import PlantSearch from "../../components/plantSearch";
 function Search() {
   return (
     <div className="aboult">
-      <PlantSearch/>
+      {/* <PlantSearch/> */}
+      test
     </div>
   );
 }
