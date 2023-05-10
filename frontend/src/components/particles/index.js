@@ -4,7 +4,7 @@ import { loadFull } from "tsparticles";
 
 import folha1 from '../../assets/img/folha1.png';
 import leaf2 from '../../assets/img/monst.png';
-import leaf3 from '../../assets/img/leaf3.png';
+// import leaf3 from '../../assets/img/leaf3.png';
 
 import './styles.css';
 
@@ -49,7 +49,7 @@ const particlesLoaded = useCallback(async container => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 1,
                         },
                         repulse: {
                             distance: 200,
@@ -80,16 +80,12 @@ const particlesLoaded = useCallback(async container => {
                       out_mode: "out",
                       attract: {
                         enable: false,
-                        rotateX: 100,
-                        rotateY: 100
+                        rotateX: 200,
+                        rotateY: 900
                       }
                     },
                     number: {
-                        density: {
-                            enable: true,
-                            area: 2000,
-                        },
-                        value: 80,
+                      value: 20,
                     },
                     opacity: {
                         value: 0.9,
@@ -101,7 +97,7 @@ const particlesLoaded = useCallback(async container => {
                         color: "#000000"
                       },
                       polygon: {
-                        nb_sides: 40
+                        nb_sides: 10
                       },
                       images:[ 
                         {
@@ -114,11 +110,11 @@ const particlesLoaded = useCallback(async container => {
                           width: 1,
                           height: 1
                         },
-                        {
-                          src: leaf3,
-                          width: 10,
-                          height: 10
-                        },
+                        // {
+                        //   src: leaf3,
+                        //   width: 10,
+                        //   height: 10
+                        // },
                       ]
                     },
                     size: {
